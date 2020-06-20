@@ -1,7 +1,31 @@
+@charset "UTF-8";
 html {scroll-behavior: smooth;}
-/* var */
+::selection {background: var(--color-accent); color: var(--color-white);}
+/* variable */
 :root {
-    
+    --color-main: #403F57;
+    --color-alt: #3E7FBD;
+    --color-accent: #F07737;
+    --color-altAccent: #C59B72;
+    --color-black: #333333;
+    --color-white: #eeeeee;
 }
-
-/* toppage content */
+/* overwrite reboot.css */
+body {color: var(--color-black); font-family: "nimbus-sans","source-han-sans-japanese",sans-serif;}
+a {color: var(--color-accent);text-decoration: none;}
+a:hover {color: var(--color-accent);text-decoration: none;}
+caption {color: var(--color-black);opacity: 0.9;}
+input,textarea{border: none; outline: none;}
+/* kerning setting */
+body {-webkit-font-feature-settings: "pwid"; font-feature-settings: "pwid"; letter-spacing: .02em;}
+/* common class */
+.flex {display: flex;}
+.flex-wrp {display: flex; flex-wrap: wrap;}
+.flex-cnt {display: flex; justify-content: center;}
+.flex-btw {display: flex; justify-content: space-between;}
+.flex-ard {display: flex; justify-content: space-around;}
+.flex-wrp-cnt {display: flex; flex-wrap: wrap; justify-content: center;}
+.flex-wrp-btw {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.flex-wrp-ard {display: flex; flex-wrap: wrap; justify-content: space-around;}
+.block {display: block;}
+.inline {display: inline;}
