@@ -5,9 +5,15 @@
     <!-- META -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="主にゲーム関連イベントのお手伝いをしています。各種デザイン及び配信技術スタッフなど。">
     <!-- OGP -->
-
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ken7253">
+    <meta property="og:description" content="主にゲーム関連イベントのお手伝いをしています。各種デザイン及び配信技術スタッフなど。">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="ken7253_">
     <!-- STYLESHEET -->
     <link href="css/reboot.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -26,36 +32,80 @@
         })(document);
       </script>
 </head>
-<body>
-    <nav class="social-nav">
-        <ul>
-            <li><a href="https://twitter.com/ken7253_" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/ken7253" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.twitch.tv/ken7253" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a></li>
-        </ul>
-    </nav>
+<body id="index">
+    <section class="first-view flex">
+        <div class="wrapper">
+            <h1><a href="index.html">dairoku-studio.com</a></h1>
+            <nav class="social-nav">
+                <ul class="flex">
+                    <li title="Blog"><a href="https://ken7253.hatenablog.com/"><i class="fas fa-pencil-alt"></i></a></li>
+                    <li title="Twitter"><a href="https://twitter.com/ken7253_" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                    <li title="Github"><a href="https://github.com/ken7253" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+                    <li title="Twitch"><a href="https://www.twitch.tv/ken7253" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
     <main>
     <section class="about">
         <div class="wrapper">
-            <h2 class="top-ttl-h2">ABOUT</h2>
-            <p>
-                主にゲーム関連イベントのお手伝いをしています。<br>
-                各種デザイン及び配信技術スタッフなど。<br>
-                内容などについては<a href="biography.html">活動ページ</a>よりご確認ください。
-            </p>
+            <h2 class="common-ttl-h2">ABOUT</h2>
+            <div class="overview">
+                <h3 class="common-ttl-h3">ken7253</h3>
+                <p>
+                    PCゲーマーです。FPSとかストラテジとかやってます。<br>
+                    主にTwitchで配信見たりしてます。配信はしません。
+                </p>
+                <p>
+                    主にゲーム関連イベントのお手伝いをしています。<br>
+                    各種デザイン及び配信技術スタッフなど。<br>
+                    内容などについては<a href="biography.html">活動ページ</a>よりご確認ください。
+                </p>
+            </div>
+            <div class="skill">
+                <h3 class="common-ttl-h3">skill</h3>
+                <h4>デザインソフト</h4>
+                <ul>
+                    <li>Photoshop</li>
+                    <li>XD</li>
+                    <li>AfterEffects</li>
+                    <li>Dimension</li>
+                </ul>
+                <h4>言語</h4>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>javascript</li>
+                </ul>
+                <h4>その他</h4>
+                <ul>
+                    <li>Git/Github</li>
+                    <li>WordPress</li>
+                </ul>
+            </div>
         </div>
     </section>
     <section class="content">
         <div class="wrapper">
-            <h2 class="top-ttl-h2">CONTACT</h2>
-            <p>ご依頼はTwitterもしくはDiscordのDMにて</p>
+            <h2 class="common-ttl-h2">CONTACT</h2>
+            <p>
+                ご依頼は<a href="https://twitter.com/ken7253_" target="_blank" rel="noopener noreferrer">Twitter</a>もしくはDiscord(ken7253#4915)のDMにて</p>
         </div>
     </section>
 </main>
     <footer>
-        <div class="copyright">
-            <p>copyright</p>
-        </div>    
+        <div class="wrapper">
+            <div id="site-map">
+                <ul class="flex-wrp-ard">
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="biography.html">BIOGRAPHY</a></li>
+                    <li><a href="https://ken7253.hatenablog.com/">BLOG</a></li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <p>&copy; ken7253 2020</p>
+            </div>
+        </div>
     </footer>
     <script src="/js/vue.js"></script>
 </body>
