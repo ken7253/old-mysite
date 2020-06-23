@@ -40,9 +40,9 @@ body {-webkit-font-feature-settings: "pwid"; font-feature-settings: "pwid"; lett
 .inline {display: inline;}
 
 /* Heading */
-h1 {text-align: center; border-bottom: solid 1px var(--color-white); padding-bottom: 1rem;}
+h1 {text-align: center; border-bottom: solid 1px var(--color-white); padding-bottom: 1rem;padding-bottom: min(1vw,.75rem);}
 h1 a {color: var(--color-white);}
-.common-ttl-h2 {border-left: solid 7px var(--color-accent); padding-left: 1rem; margin-bottom: 1rem;}
+.common-ttl-h2 {border-left: solid 7px var(--color-accent); padding-left: 1rem; margin-bottom: 1.5rem;}
 .common-ttl-h3 {background: var(--color-white); display: inline-block; padding: 0 1rem; color: var(--color-accent);}
 
 /* pagelayout */
@@ -51,11 +51,11 @@ section {margin: 5vh auto;}
 .wrapper {max-width: 1200px; margin: auto;padding: 5vh 2.5vw;}
 body {background: var(--color-main) url(https://user-images.githubusercontent.com/57705206/85230087-abaaa400-b428-11ea-80e0-bc2ece2c4ba9.jpg) center center / cover no-repeat fixed; background-blend-mode: hard-light;}
 .first-view {margin: 0;}
-.social-nav ul {justify-content: flex-end; margin: 0;padding: 0;list-style-type: none;font-size: 2rem;}
+.social-nav ul {justify-content: flex-end; margin: 0;padding: 0;list-style-type: none;font-size: 1.5rem;font-size: clamp(1rem,2vw,2rem);}
 .social-nav ul li {padding-left: 1rem;}
 .social-nav ul a {color: var(--color-white);}
 .social-nav ul a:hover {color: var(--color-alt);}
-.about {background-color: var(--color-white-09); color: var(--color-main);}
+.about {background-color: var(--color-white-07); color: var(--color-main); box-shadow: 0 0 20px var(--color-alt);}
 .about .common-ttl-h3 {background-color: var(--color-black-03);color: var(--color-white);}
 
 /* Only index.html */
@@ -64,9 +64,7 @@ body {background: var(--color-main) url(https://user-images.githubusercontent.co
 
 /* Only biography */
 .works-dl dt {font-size: 1.25rem;}
-.works-web,.works-streaming,.works-design {
-    margin: 2.5vh 0;
-}
+.works-web,.works-streaming,.works-design { margin: 2.5vh 0;}
 
 /* footer */
 footer {background-color: var(--color-main); }
@@ -76,3 +74,27 @@ footer ul li {min-width: 200px;text-align: center;}
 footer a {display: block; color: var(--color-alt);}
 footer a:hover {color: var(--color-accent);}
 footer p {margin: 0; text-align: center;}
+
+/* =====================
+    Animation 
+===================== */
+@media (prefers-reduced-motion: reduce){
+    .first-view {animation: none; opacity: 1;}
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.first-view {
+    opacity: 0;
+    -webkit-animation: 500ms ease-in 250ms 1 forwards fadeIn;
+    animation: 500ms ease-in 250ms 1 forwards fadeIn;
+}
+
+@media (prefers-color-scheme: dark){
+    body {background-blend-mode: luminosity;}
+}
