@@ -1,8 +1,12 @@
 @charset "UTF-8";
 html {scroll-behavior: smooth;}
 ::selection {background: var(--color-accent); color: var(--color-white);}
-/* variable */
+::-webkit-scrollbar {width: 5px;}
+::-webkit-scrollbar-track {background-color: var(--color-black);}
+::-webkit-scrollbar-thumb {background-color: var(--color-white-05);}
 :root {
+    font-size: max(16px,1.25vw);
+    /* variable */
     --color-main: #403F57;
     --color-alt: #3E7FBD;
     --color-accent: #F07737;
