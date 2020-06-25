@@ -98,6 +98,25 @@ footer p {margin: 0; text-align: center;}
     -webkit-animation: 500ms ease-in 250ms 1 forwards fadeIn;
     animation: 500ms ease-in 250ms 1 forwards fadeIn;
 }
+@keyframes bgblur {
+    0% {
+        backdrop-filter: blur(0);
+    }
+    45% {
+        backdrop-filter: blur(20px);
+    }
+    90% {
+        backdrop-filter: blur(0);
+    }
+    100% {
+        backdrop-filter: blur(0);
+    }
+}
+body {
+    backdrop-filter: blur(0);
+    -webkit-animation: 10s linear 250ms infinite bgblur;
+    animation: 10s linear 250ms infinite bgblur;
+}
 
 @media (prefers-color-scheme: dark){
     body {background-blend-mode: luminosity;}
