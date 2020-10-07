@@ -5,7 +5,6 @@ html {scroll-behavior: smooth;}
 ::-webkit-scrollbar-track {background-color: var(--color-black);}
 ::-webkit-scrollbar-thumb {background-color: var(--color-white-05);}
 :root {
-    font-size: max(16px,1.25vw);
     /* variable */
     --color-main: #403F57;
     --color-alt: #3E7FBD;
@@ -47,35 +46,37 @@ body {-webkit-font-feature-settings: "pwid"; font-feature-settings: "pwid";}
 h1 {text-align: center; border-bottom: solid 1px var(--color-white); padding-bottom: 1rem;padding-bottom: min(1vw,.75rem);}
 h1 a {color: var(--color-white);}
 .common-ttl-h2 {border-left: solid 7px var(--color-accent); padding-left: 1rem; margin-bottom: 1.5rem;}
-.common-ttl-h3 {background: var(--color-white); display: inline-block; padding: 0 1rem; color: var(--color-accent);}
+.common-ttl-h3 {background: var(--color-white); display: inline-block; padding: 0 1rem; color: var(--color-black);}
 
 /* pagelayout */
 body {min-height: 100vh; overflow-x: hidden;}
 section {margin: 5vh auto;}
-.wrapper {max-width: 1200px; margin: auto;padding: 5vh 2.5vw;}
-body {background: var(--color-black) ; background-blend-mode: hard-light;}
+.wrapper {max-width: 1200px; margin: auto;padding: 3vh 2.5vw;}
+body {background: var(--color-black) url(https://user-images.githubusercontent.com/57705206/85230087-abaaa400-b428-11ea-80e0-bc2ece2c4ba9.jpg) center center / cover no-repeat fixed;}
 .first-view {margin: 0;}
-.social-nav ul {justify-content: flex-end; margin: 0;padding: 0;list-style-type: none;font-size: 1.5rem;font-size: clamp(1rem,2vw,2rem);}
+.social-nav ul {justify-content: flex-end; margin: 0;padding: 0;list-style-type: none;font-size: 1.5rem;font-size: clamp(1rem,1.25vw,2rem);}
 .social-nav ul li {padding-left: 1rem;}
 .social-nav ul a {color: var(--color-white);}
 .social-nav ul a:hover {color: var(--color-alt);}
-.about {background-color: var(--color-white-07); color: var(--color-main);}
-.about .common-ttl-h3 {background-color: var(--color-black-03);color: var(--color-white);}
+.about {background-color: var(--color-white-09); color: var(--color-main);}
+.about .common-ttl-h3 {background-color: var(--color-black);color: var(--color-white);}
 
-/* Only index.html */
-#index .first-view {width: 100%;height: 100vh;}
+
+#index .first-view {width: 100%;height: 20vh;}
 #index .first-view .wrapper {width: 100%;}
 
-/* Only biography */
+.works {background-color: var(--color-black);}
 .works-dl dt {font-size: 1.25rem;}
 .works-web,.works-streaming,.works-design { margin: 2.5vh 0;}
 
 /* footer */
 footer {background-color: var(--color-main); }
+footer .scroll-top {position: fixed; bottom: 4vh; right: 0; z-index: 1000; padding: 10px; background-color: var(--color-main);}
+footer .scroll-top path {fill: var(--color-white);}
 footer .wrapper {padding-bottom: 0;}
 footer ul {margin: 0; padding: 0; list-style-type: none;}
-footer ul li {min-width: 200px;text-align: center;}
-footer a {display: block; color: var(--color-alt);}
+footer ul li {text-align: center; padding: 0 30px 10px; color: var(--color-white);}
+footer a {display: block; color: var(--color-white);}
 footer a:hover {color: var(--color-accent);}
 footer p {margin: 0; text-align: center;}
 
@@ -97,27 +98,4 @@ footer p {margin: 0; text-align: center;}
     opacity: 0;
     -webkit-animation: 500ms ease-in 250ms 1 forwards fadeIn;
     animation: 500ms ease-in 250ms 1 forwards fadeIn;
-}
-@keyframes bgblur {
-    0% {
-        backdrop-filter: blur(0);
-    }
-    45% {
-        backdrop-filter: blur(20px);
-    }
-    90% {
-        backdrop-filter: blur(0);
-    }
-    100% {
-        backdrop-filter: blur(0);
-    }
-}
-body {
-    backdrop-filter: blur(0);
-    -webkit-animation: 10s linear 250ms infinite bgblur;
-    animation: 10s linear 250ms infinite bgblur;
-}
-
-@media (prefers-color-scheme: dark){
-    body {background-blend-mode: luminosity;}
 }
