@@ -30,7 +30,7 @@ a:hover {color: var(--color-alt);text-decoration: none;opacity: .8;}
 caption {color: var(--color-white);opacity: .9;}
 input,textarea{border: none; outline: none;}
 /* kerning setting */
-body {-webkit-font-feature-settings: "pwid"; font-feature-settings: "pwid"; letter-spacing: .02em;}
+body {-webkit-font-feature-settings: "pwid"; font-feature-settings: "pwid";}
 /* common class */
 .flex {display: flex;}
 .flex-wrp {display: flex; flex-wrap: wrap;}
@@ -53,13 +53,13 @@ h1 a {color: var(--color-white);}
 body {min-height: 100vh; overflow-x: hidden;}
 section {margin: 5vh auto;}
 .wrapper {max-width: 1200px; margin: auto;padding: 5vh 2.5vw;}
-body {background: var(--color-main) url(https://user-images.githubusercontent.com/57705206/85230087-abaaa400-b428-11ea-80e0-bc2ece2c4ba9.jpg) center center / cover no-repeat fixed; background-blend-mode: hard-light;}
+body {background: var(--color-black) ; background-blend-mode: hard-light;}
 .first-view {margin: 0;}
 .social-nav ul {justify-content: flex-end; margin: 0;padding: 0;list-style-type: none;font-size: 1.5rem;font-size: clamp(1rem,2vw,2rem);}
 .social-nav ul li {padding-left: 1rem;}
 .social-nav ul a {color: var(--color-white);}
 .social-nav ul a:hover {color: var(--color-alt);}
-.about {background-color: var(--color-white-07); color: var(--color-main); box-shadow: 0 0 20px var(--color-alt);}
+.about {background-color: var(--color-white-07); color: var(--color-main);}
 .about .common-ttl-h3 {background-color: var(--color-black-03);color: var(--color-white);}
 
 /* Only index.html */
